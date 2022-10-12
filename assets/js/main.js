@@ -17,13 +17,15 @@ const stickerMsg = document.querySelector("#e2-msg");
 
 
 checkBtn.addEventListener("click", () => {
-  let sumaStickers = parseInt(sticker1.value) + parseInt(sticker2.value) + parseInt(sticker2.value);
+  
+  const sumaStickers = parseInt(sticker1.value) + parseInt(sticker2.value) + parseInt(sticker3.value);
+  console.log(sumaStickers)
   if(sumaStickers > 10) {
     stickerMsg.textContent = `Llevas ${sumaStickers} stickers !! (╯°□°）╯︵ ┻━┻`
   } else{
     stickerMsg.textContent = `Llevas ${sumaStickers} stickers 😎`
   }
-
-
 })
+
+
 
