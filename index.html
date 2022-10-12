@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Desafio #</title>
+        <title>Desafio 2 - Condiciones</title>
 
         <!-- Normalize css -->
         <link
@@ -15,80 +15,86 @@
             referrerpolicy="no-referrer"
         />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
-<main>
-    <!-- ejercicio 1 -->
-    <section class="card e-1">
-        <img src="assets/img/js.png" alt="" id="border-img">
-        <button id="border-btn">Agregar/quitar borde</button>
-    </section>
+        <main>
+            <!-- ejercicio 1 -->
+            <section class="card e-1">
+                <img src="assets/img/js.png" alt="" id="border-img" />
+                <button id="border-btn">Agregar/quitar borde</button>
+            </section>
 
-<!-- ejercicio 2 -->
-    <section class="card e-2">
-        <p>Puedes llevar hasta 10 stickers</p>
-        <div class="sticker-container">
-            <div class="sticker">
-                <img src="assets/img/s1.jpg" alt="">
-                <input type="number" id="e-input1" min="0" value="0">
-            </div>
-            <div class="sticker">
-                <img src="assets/img/s2.jpg" alt="">
-                <input type="number" id="e-input2" min="0" value="0">
-            </div>
-            <div class="sticker">
-                <img src="assets/img/s3.jpg" alt="">
-                <input type="number" id="e-input3" min="0" value="0">
-            </div>
-        </div>
-        <p id="e2-msg"></p>
-        <button id="check-stickers">Verificar</button>
-    </section>
+            <!-- ejercicio 2 -->
+            <section class="card e-2">
+                <p>Puedes llevar hasta 10 stickers</p>
+                <div class="sticker-container">
+                    <div class="sticker">
+                        <img src="assets/img/s1.jpg" alt="" />
+                        <input type="number" id="e-input1" min="0" value="0" />
+                    </div>
+                    <div class="sticker">
+                        <img src="assets/img/s2.jpg" alt="" />
+                        <input type="number" id="e-input2" min="0" value="0" />
+                    </div>
+                    <div class="sticker">
+                        <img src="assets/img/s3.jpg" alt="" />
+                        <input type="number" id="e-input3" min="0" value="0" />
+                    </div>
+                </div>
+                <p id="e2-msg"></p>
+                <button id="check-stickers">Verificar</button>
+            </section>
 
-    <!-- ejercicio 3 -->
-    <section class="card e-3">
-        <p>Ingresa el password</p>
-        <div class="select-container">
-        <select id="select-1">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-        </select>
-        <select id="select-2">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-        </select>
-        <select id="select-3">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-        </select>
-    </div>
-    <button id="login">Ingresar</button>
-    <p id="loginMsg"></p>
-    </section>
-</main>
-
+            <!-- ejercicio 3 -->
+            <section class="card e-3">
+                <p>Ingresa el password</p>
+                <div class="select-container">
+                    <select id="select-1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <select id="select-2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                    <select id="select-3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <button id="login">Ingresar</button>
+                <p id="loginMsg"></p>
+            </section>
+        </main>
 
         <script src="assets/js/main.js"></script>
     </body>

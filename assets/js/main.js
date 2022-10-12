@@ -20,9 +20,9 @@ checkBtn.addEventListener("click", () => {
   const sumaStickers = parseInt(sticker1.value) + parseInt(sticker2.value) + parseInt(sticker3.value);
   console.log(sumaStickers)
   if(sumaStickers > 10) {
-    stickerMsg.textContent = `Llevas ${sumaStickers} stickers !! (╯°□°）╯︵ ┻━┻`
+    stickerMsg.innerHTML = `Llevas ${sumaStickers} stickers !! (╯°□°）╯︵ ┻━┻ <br> El maximo es 10 🛑!!`
   } else{
-    stickerMsg.textContent = `Llevas ${sumaStickers} stickers 😎`
+    stickerMsg.textContent = `Llevas ${sumaStickers} stickers 👌`
   }
 })
 
@@ -39,11 +39,11 @@ const loginMsg = document.querySelector("#loginMsg");
 loginBtn.addEventListener("click", () => {
   if(select1.value == 9 && select2.value == 1 && select3.value == 1){
     console.log("entra if")
-    loginMsg.textContent = "Password 1 correcto";
+    loginMsg.textContent = "Password 1 correcto ✔";
   } else if(select1.value == 7 && select2.value == 1 && select3.value == 4) {
-    loginMsg.textContent = "Password 2 correcto";
+    loginMsg.textContent = "Password 2 correcto ✔";
   } else {
-    loginMsg.textContent = "Password incorrecto";
+    loginMsg.textContent = "Password incorrecto ❌";
   }
 })
 
