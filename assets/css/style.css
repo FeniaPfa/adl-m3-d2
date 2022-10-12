@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 1rem;
+}
+
+img{
+  width: 100%;
+}
+
+button{
+  cursor: pointer;
+}
+
+.card{
+  border: 1px solid #000;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  gap: 2rem;
+}
+
+.border{
+  border: 2px solid red;
+}
+
+.sticker-container{
+  display: flex;
+}
+
+.sticker{
+  padding: .5rem;
+}
