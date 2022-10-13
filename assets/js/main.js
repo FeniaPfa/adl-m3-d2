@@ -38,7 +38,6 @@ const loginMsg = document.querySelector("#loginMsg");
 
 loginBtn.addEventListener("click", () => {
   if(parseInt(select1.value) === 9 && parseInt(select2.value) === 1 && parseInt(select3.value) === 1){
-    console.log("entra if")
     loginMsg.textContent = "Password 1 correcto ✔";
   } else if(parseInt(select1.value) === 7 && parseInt(select2.value) === 1 && parseInt(select3.value) === 4) {
     loginMsg.textContent = "Password 2 correcto ✔";
