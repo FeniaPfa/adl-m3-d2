@@ -6,6 +6,10 @@ borderBtn.addEventListener("click", () =>{
   borderImg.classList.toggle("border");
 })
 
+borderImg.addEventListener("click", () =>{
+  borderImg.classList.toggle("border");
+})
+
 // Ejercicio 2
 
 const sticker1 = document.querySelector("#e-input1");
@@ -18,7 +22,6 @@ const stickerMsg = document.querySelector("#e2-msg");
 
 checkBtn.addEventListener("click", () => {
   const sumaStickers = parseInt(sticker1.value) + parseInt(sticker2.value) + parseInt(sticker3.value);
-  console.log(sumaStickers)
   if(sumaStickers > 10) {
     stickerMsg.innerHTML = `Llevas ${sumaStickers} stickers !! (╯°□°）╯︵ ┻━┻ <br> El maximo es 10 🛑!!`
   } else{
